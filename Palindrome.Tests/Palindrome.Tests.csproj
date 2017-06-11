@@ -52,6 +52,7 @@
     <Compile Include="UnitTests\OnePalindromeSample\OnePalindromeSampleTests.cs" />
     <Compile Include="UnitTests\ProvidedSample\ProvidedSamplesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests\SpecialCases\SpecialCasesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -25,19 +25,13 @@ namespace Palindrome.Library.Implementations
                         continue;
 
                     // we found a palindrome!!!!!
-                    int currentPalindromeLength = forwardString.Length;
                     temporaryPalinDrome = new PalinDrome
                     {
                         Text = forwardString,
-                        Length = currentPalindromeLength,
+                        Length = forwardString.Length,
                         Index = i
                     };
 
-                    // move search pointer forward to the end of newly found palindrome
-                    //i = i + currentPalindromeLength - 1;
-
-                    // exit the inner loop
-                    //break;
                 }
                 if (temporaryPalinDrome != null)
                 {

@@ -8,7 +8,7 @@ namespace Palindrome.App
     {
         static void Main()
         {
-            var str = "sqrrqabccbatudefggfedvwhijkllkjihxymnnmzpop";
+            var sampleString = "sqrrqabccbatudefggfedvwhijkllkjihxymnnmzpop";
 
              // str = "addcdxddf";
 
@@ -20,12 +20,21 @@ namespace Palindrome.App
 
           //  str = "abba";
 
+            sampleString = "abracadabra";
 
-            Console.WriteLine(str);
+            sampleString = "HYTBCABADEFGHABCDEDCBAGHTFYW1234567887654321ZWETYGDE";
+
+            sampleString = "abcccdeed";
+
+
+            sampleString = "abaaaa";
+
+
+            Console.WriteLine(sampleString);
 
             IPalindromeLibrary library = new PalindromeLibrary();
 
-            var longest = library.FindPalindromeList(str);
+            var longest = library.FindPalindromeList(sampleString);
 
             foreach (var palinDrome in longest)
             {
@@ -34,7 +43,7 @@ namespace Palindrome.App
 
             Console.WriteLine("\n\n\n\n");
 
-            longest = library.FindLongestPalindromes(str, 3);
+            longest = library.FindLongestPalindromes(sampleString, 3);
 
             foreach (var palinDrome in longest)
             {

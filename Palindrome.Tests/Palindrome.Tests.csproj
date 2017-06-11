@@ -48,7 +48,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProvidedSamplesTests.cs" />
+    <Compile Include="UnitTests\OnePalindromeSample\OnePalindromeSampleTests.cs" />
+    <Compile Include="UnitTests\ProvidedSample\ProvidedSamplesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,13 +4,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Palindrome.Library.Abstractions;
 using Palindrome.Library.Implementations;
 
-namespace Palindrome.Tests
+namespace Palindrome.Tests.UnitTests.ProvidedSample
 {
+    /// <summary>
+    /// Suite to verify that program returns the provided sample results using the provided sample string.
+    /// </summary>
     [TestClass]
     public class ProvidedSamplesTests
     {
+        
         [TestMethod]
-        public void Test_01_VerifyThatProvidedSampleReturnsProvidedOutput()
+        public void Test_01_verify_that_provided_sample_string_returns_provided_output()
         {
 
             // Arrange
@@ -21,6 +25,10 @@ namespace Palindrome.Tests
 
             // Act
             var longest3Palindromes = library.FindNthLongestPalindromes(sampleString, longest3).ToList();
+            foreach (var palinDrome in longest3Palindromes)
+            {
+                Console.WriteLine(palinDrome);
+            }
 
 
             // Assert
@@ -43,7 +51,7 @@ namespace Palindrome.Tests
         }
 
         [TestMethod]
-        public void Test_02_VerifyThatProvidedSampleReturnsSixPalindromes()
+        public void Test_02_Test_01_verify_that_provided_sample_string_returns_six_palindromes()
         {
 
             // Arrange

@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnitTests\LongestEnglishPalindrome\LongestEnglishWordPalindrome.cs" />
     <Compile Include="UnitTests\OnePalindromeSample\OnePalindromeSampleTests.cs" />
     <Compile Include="UnitTests\ProvidedSample\ProvidedSamplesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

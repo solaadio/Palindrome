@@ -20,7 +20,7 @@ namespace Palindrome.Tests
 
 
             // Act
-            var longest3Palindromes = library.FindLongestPalindromes(sampleString, longest3).ToList();
+            var longest3Palindromes = library.FindNthLongestPalindromes(sampleString, longest3).ToList();
 
 
             // Assert

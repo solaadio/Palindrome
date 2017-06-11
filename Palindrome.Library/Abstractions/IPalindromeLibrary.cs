@@ -7,7 +7,7 @@ namespace Palindrome.Library.Abstractions
     {
         IEnumerable<PalinDrome> FindPalindromeList(string inputString);
 
-        IEnumerable<PalinDrome> FindLongestPalindromes(string inputString, int topNthLongest);
+        IEnumerable<PalinDrome> FindNthLongestPalindromes(string inputString, int topNthLongest);
 
     }
 }

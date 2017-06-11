@@ -7,6 +7,11 @@ namespace Palindrome.Library.Implementations
 {
     public class PalindromeLibrary : IPalindromeLibrary
     {
+        /// <summary>
+        /// FindPalindromeList
+        /// </summary>
+        /// <param name="inputString"></param>
+        /// <returns></returns>
         public IEnumerable<PalinDrome> FindPalindromeList(string inputString)
         {
             List<PalinDrome> palindromeList = new List<PalinDrome>();
@@ -42,7 +47,13 @@ namespace Palindrome.Library.Implementations
             return palindromeList;
         }
 
-        public IEnumerable<PalinDrome> FindLongestPalindromes(string inputString, int topNthLongest)
+        /// <summary>
+        /// FindNthLongestPalindromes
+        /// </summary>
+        /// <param name="inputString"></param>
+        /// <param name="topNthLongest"></param>
+        /// <returns></returns>
+        public IEnumerable<PalinDrome> FindNthLongestPalindromes(string inputString, int topNthLongest)
         {
             return FindPalindromeList(inputString).OrderByDescending(palindrome => palindrome.Length).Take(topNthLongest);
         }

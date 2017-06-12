@@ -1,7 +1,7 @@
 # Palindrome
 
 1) Clone or Download the solution to your local folder
-2) Build the Solution
+2) Build the Solution in Visual Studio 2017 (should work with VS2015 too)
 3) Run the unit-tests by right-clicking the "Palindrome.Tests" project and selecting the "Run Unit Tests" option
 4) Right-click on the "Palindrome.Wpf" and set it as the "Startup Project"
 5) Press the "Start" button to run the program
